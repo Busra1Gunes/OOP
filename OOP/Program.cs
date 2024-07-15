@@ -1,4 +1,5 @@
 ﻿using OOP;
+using System.Net.NetworkInformation;
 
 class Program
 {
@@ -17,9 +18,11 @@ class Program
 		productManager.Add(product);
 		int sayi = 100;
 		//ref yapıldığında metod içindeki sayı değerini atar
-		productManager.BirseyYap( ref sayi);
 		Console.WriteLine(sayi);
 		Console.WriteLine(product.ProductName);
+		productManager.Topla2(2, 3);
+		int sonuc = productManager.Topla(9, 7);
+		Console.WriteLine(sonuc);
 		//void metodu ders 3
 
 
